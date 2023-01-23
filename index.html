@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Output</title>
+    <style>
+      body {
+        font-family: monospace;
+        color: rgb(250, 253, 76);
+        background-color: rgb(173, 102, 239);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Input Output</h1>
+    </header>
+    <main>
+      <h1>Class 1 Lab</h1>
+      <p style="color: aliceblue; background-color: black">
+        What's your favourite animal?
+      </p>
+      <p style="color: aliceblue; background-color: blue">
+        What's your hair colour?
+      </p>
+      <p style="color: aliceblue; background-color: brown">
+        What's your favourite holiday desitination?
+      </p>
+      <p style="color: aliceblue; background-color: coral">
+        What's your eye colour?
+      </p>
+      <ul>
+        <li>
+          This is a list item. it has no bullet points, because the 'li' is
+          inside an unordered list tag.
+        </li>
+      </ul>
+    </main>
+
+    <script>
+      let user = prompt("What is your name?");
+
+      console.log("The user's name is " + user);
+
+      let animal = prompt("What is your ideal pet? A-");
+
+      console.log("The user's ideal pet is a " + animal);
+
+      let haircolor = prompt("What is your hair colour?");
+
+      console.log("The user's hair colour is " + haircolor);
+
+      let holiday = prompt("What is your favourite holiday destination?");
+
+      console.log("The user's favourite holiday destination is " + holiday);
+
+      let eyecolor = prompt("What is your eye colour?");
+
+      console.log("The user's eye color is " + eyecolor);
+
+      alert(
+        "Hi there, " +
+          user +
+          ". Wow! " +
+          holiday +
+          " is such a cool holiday destination! Thank you for letting me learn more about you!"
+      );
+
+      let answer = prompt(
+        "Would you take your pet with you on holiday? yes/no"
+      );
+
+      if ((answer = yes)) {
+        message = "That's cool! So would I!";
+      } else if ((answer = no)) {
+        message = "That's unfortunate!";
+      } else {
+        message = "Sorry, I dont understand your answer";
+      }
+      console.log(message);
+    </script>
+  </body>
+</html>
